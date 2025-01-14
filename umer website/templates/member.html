@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>/
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness | GymFitness.com</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!--header section-->
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="{{ url_for('static', filename='image/logo.png') }}" />
+            </div>
+            <ul>
+                <li class="item"><a href="/index">Home</a></li>
+                <li class="item"><a href="/service">Services</a></li>
+                <li class="item"><a href="/about">About Us</a></li>
+                <li class="item"><a href="/member">Member</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+        <section id="home">
+            <h1 class="h-primary">BECOME A MEMBER NOW</h1>
+            <p>Make Your Body Shape</p>
+            <button class="btn">Join Now</button>
+        </section>
+    </header>
+
+    <!--footer section-->
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicon">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="member.html">Member</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2024; Designed By <span class="Designer">Umer</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

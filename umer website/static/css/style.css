@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --navbar-height: 59px;
+
+    /* header section */
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -8;
+    opacity: 0.4;
+}
+#logo{
+    margin: 5px 15px;
+}
+#logo img{
+    height: 100px;
+    margin: -10px 30px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style-type: none;
+    display: inline-block;
+}
+#navbar ul li a{
+    color: white;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+    color: red;
+    transition: .4s;  
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../image/img2.webp') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    opacity: 0.89;
+    margin: 100px ;
+    margin-bottom: 50px;
+}
+#home h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#home p{
+    color: rgb(227, 227, 227);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 15px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;   
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid transparent;
+    background-color:red;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform .4s;   
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.center{
+    text-align: center;
+}
+
+/* about section */
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #000000 ;
+    opacity: 94%;
+    
+    
+}
+.about img{
+    height: auto;
+    width: 430px;
+    opacity: 100%; 
+    margin-bottom: 100px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h2:hover{
+    opacity: 2;
+    color: red;
+}
+.about-text h5{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45;
+}
+
+/* service section */
+
+.services {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #1d1b1b;
+}
+.services-heading {
+    font-size: 4em;
+    margin-bottom: 40px;
+    color: white;
+}
+.services-heading:hover{
+    color: red;
+    opacity: 2;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.service-item {
+    text-align: center;
+}
+
+.service-item img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-item p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+}
+.service-item p:hover{
+    color: red;
+    opacity: 2;
+}
+
+
+/* footer section */
+
+footer{
+    background-color: #000000;
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialicon{
+    display: flex;
+    justify-content: center;
+}
+.socialicon a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 50%;
+}
+.socialicon a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicon a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialicon a:hover i{
+    color: red;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+}
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footernav ul li a:hover{
+    opacity: 2;
+    color: red;
+}
+.footerbottom{
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+.footerbottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
